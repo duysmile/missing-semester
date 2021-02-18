@@ -15,3 +15,6 @@
   - Show battery: `system_profiler SPPowerDataType | grep "State of Charge" | awk '{print $5}'`
   - Show CPU temperature: `sudo powermetrics --samplers smc |grep -i "CPU die temperature"`
   - `awk` command to get string split by space(' ') in order of input string
+
+`Shebang` is character sequence consisting of the characters number sign and exclamation mark (**#!**).
+When a text file with a shebang is used as if it is an executable in a Unix-like operating system, the program loader mechanism parses the rest of the file's initial line as an interpreter directive. The loader executes the specified interpreter program, passing to it as an argument the path that was initially used when attempting to run the script, so that the program may use the file as input data. For example, `#!/bin/sh`.
