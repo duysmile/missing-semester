@@ -1,3 +1,5 @@
+`ls -l`: listing long format
+- `permission drwxr-xr--`: `d` is directory, 3 group correspond to owner, group owner, all user in system.
 5. `echo '#!/bin/sh' | tee semester | echo 'curl --head --silent https://missing.csail.mit.edu' | tee -a semester`
   - use single-quote (') to treat special character in `shell`
   - `tee` to open a stream to copies standard input to standard output
