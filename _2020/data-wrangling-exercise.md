@@ -16,3 +16,9 @@
 - Next, use `sed` to replace all words by their last two characters
 - Then, combine `uniq -c` to get list unique word with number of appearance and `sort -nk1,1` to order them by frequency of appearance.
 - Last, just get 3 most common last two letters by `tail`.
+2. Replace file with `sed`
+```bash
+sed -I .bk -E 's/Hello/Xin chao/' test.txt
+```
+- Replace 'Hello' by 'Xin chao'
+- Store old version in `.bk` extension
