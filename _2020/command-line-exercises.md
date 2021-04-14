@@ -29,3 +29,10 @@ Run command
 source ./pidwait.sh
 pidwait <PID> && ls
 ```
+
+3. Remote machines
+- Use `mutlipass` to create Virtual Machines
+```bash
+brew install --cask multipass
+multipass launch --network en0 --network name=bridge0,mode=manual --name ubuntu-20
+```
